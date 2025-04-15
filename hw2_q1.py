@@ -46,3 +46,8 @@ def english_to_morse(
 
     with open(output_file, "w") as f:
         f.write(morse_lines)
+
+
+if __name__ == '__main__':
+    # Question 1
+    english_to_morse()

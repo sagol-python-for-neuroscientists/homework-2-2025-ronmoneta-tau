@@ -77,3 +77,23 @@ def meetup(agent_listing: tuple) -> list:
         updated_agents.extend([agent1, agent2])
 
     return updated_agents + ineligible
+
+
+if __name__ == '__main__':
+    # Question 2
+    # Copied data from tests as no actual data was provided, but wanted to adhere to the submission guidelines
+
+    data0 = (
+        Agent("Adam", Condition.SICK),
+        Agent("Cure0", Condition.CURE),
+        Agent("Cure1", Condition.CURE),
+        Agent("Bob", Condition.HEALTHY),
+        Agent("Alice", Condition.DEAD),
+        Agent("Charlie", Condition.DYING),
+        Agent("Vaccine", Condition.SICK),
+        Agent("Darlene", Condition.DYING),
+        Agent("Emma", Condition.SICK),
+        Agent("Cure2", Condition.CURE),
+    )
+    return_value = meetup(data0)
+    print(f"Question 2 solution: {return_value}")
